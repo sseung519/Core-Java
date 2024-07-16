@@ -86,4 +86,10 @@ public class Student {
     public void setGrade(char grade) {
         this.grade = grade;
     }
+
+    @Override
+    public String toString(){
+        return String.format(  "Student [hakbun=%s, name=%s, kor=%s,eng=%s,mat=%s,edp=%s,avg=%s,grade=%s]",
+                hakbun, name, kor, eng, mat, edp, avg, grade);
+    }
 }
