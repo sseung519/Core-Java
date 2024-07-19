@@ -7,7 +7,7 @@ import java.util.Vector;
 public class ListDemo {
     public static void main(String[] args) {
         String[] array ={"한지민", "박지민", "홍지민", "한지민", "홍지민", "신지민", "곽지민"};
-        Vector<String> vector = new Vector<String>(3,3); //(초기용량, 증가량)
+        Vector<String> vector = new Vector<String>(1,1); //(초기용량, 증가량)
 
         List<String> list = new ArrayList<>(5);
         for(String element : array) {
