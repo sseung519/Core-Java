@@ -23,4 +23,14 @@ public class SelectController {
         }
         return list;
     }
+
+    public PatientVO selectPatient(int number) {
+        PatientVO p = null;
+        try {
+            p = this.pDao.readPatient(number);
+        } catch (SQLException e) {
+            e.getMessage();
+        }
+        return p;
+    }
 }
